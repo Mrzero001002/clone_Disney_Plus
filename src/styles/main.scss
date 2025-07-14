@@ -1,5 +1,58 @@
-$bgcolor: gray;
+@use 'hero';
 
-body{
-    background-color: $bgcolor;
+$BGcolor: #040714;
+$CTsecundary: silver;
+$CTprimary: #f9f9f9;
+
+@mixin text($fontsize: 16px){
+    font-size: $fontsize;
+    line-height: $fontsize + 10px;
+    color: $CTsecundary;
+}
+
+@mixin title($fontsize: 40px) {
+    @include text($fontsize);
+    color: $CTprimary;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $BGcolor;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small { //metolodia BEM (tittle "elemento"; --Small "modificador")
+    @include title(28px);
+}
+
+.link-text{
+    @include text(18px);
+    color: $CTprimary;
+    text-decoration: underline;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text{
+    @include text;
+}
+
+.text-small {
+    @include text(12px);
 }
