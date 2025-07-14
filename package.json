@@ -20,10 +20,9 @@
   },
   "homepage": "https://github.com/Mrzero001002/clone_Disney_Plus#readme",
   "devDependencies": {
-    "gulp": "^5.0.1",
+    "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^6.0.1",
-    "imagemin": "^9.0.1",
     "mozjpeg": "^8.0.0",
     "optipng": "^4.2.0",
     "sass": "^1.89.2"

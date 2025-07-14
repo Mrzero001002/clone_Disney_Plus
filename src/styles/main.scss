@@ -1,18 +1,15 @@
 @use 'hero';
-
-$BGcolor: #040714;
-$CTsecundary: silver;
-$CTprimary: #f9f9f9;
+@use 'variaveis';
 
 @mixin text($fontsize: 16px){
     font-size: $fontsize;
     line-height: $fontsize + 10px;
-    color: $CTsecundary;
+    color: variaveis.$CTsecundary;
 }
 
 @mixin title($fontsize: 40px) {
     @include text($fontsize);
-    color: $CTprimary;
+    color: variaveis.$CTprimary;
 }
 
 *{
@@ -22,7 +19,7 @@ $CTprimary: #f9f9f9;
 }
 
 body {
-    background-color: $BGcolor;
+    background-color: variaveis.$BGcolor;
 }
 
 .title--big {
@@ -37,9 +34,9 @@ body {
     @include title(28px);
 }
 
-.link-text{
-    @include text(18px);
-    color: $CTprimary;
+.link--text{
+    @include text(14px);
+    color: variaveis.$CTprimary;
     text-decoration: underline;
 }
 
@@ -51,6 +48,6 @@ body {
     @include text;
 }
 
-.text-small {
+.text--small {
     @include text(12px);
 }
