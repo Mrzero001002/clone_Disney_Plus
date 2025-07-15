@@ -1,0 +1,47 @@
+@use 'variaveis';
+
+.shows{
+    padding: 2vw 2.6vw;
+    min-height: 60vw;
+
+    &__list{
+        display: none;
+        margin-top: 44px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        &--is-active{
+            display: grid;
+        }
+
+        &__itens{
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &__tabs{
+        display: flex;
+        justify-content: center;
+
+        &__buttons{
+            color: variaveis.$CTprimary;
+            font-size: 20px;
+            border: transparent;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+
+            &--is-active{
+                border-bottom: 5px solid variaveis.$CTprimary;
+            }
+        }
+    }
+}

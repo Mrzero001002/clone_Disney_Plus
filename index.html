@@ -23,19 +23,138 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Combo 1">
-                    <button>Assine Agora</button>
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 45,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="">
-                    <button>Assine Agora</button>
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 55,90/mês*</span>
                 </li>
             </ul>
-            <p class="text--small">
+            <p class="text--small" style="margin-top: 24px;">
                 *O preço pode variar de acordo com a plataforma.
             </p>
         </div>
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <buttons data-tab-button="EmBreve" class="shows__tabs__buttons shows__tabs__buttons--is-active">
+                Em Breve
+            </buttons>
+            <buttons data-tab-button="MaisP" class="shows__tabs__buttons">
+                Mais Populares
+            </buttons>
+            <buttons data-tab-button="MaisStar" class="shows__tabs__buttons">
+                Mais no Star+
+            </buttons>
+        </nav>
+        <ul data-tab-id="EmBreve" class="shows__list shows__list--is-active">
+            <li class="shows__list__itens">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/em_breve/willow.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="MaisP" class="shows__list">
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_populares/red.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="MaisStar" class="shows__list">
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="">
+            </li>
+            <li class="shows__list__itens">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title--big">Escolha seu Plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__itens">
+                <img src="./dist/images/logos/disneyplus_underline.png" alt="">
+                <strong class="title--small">
+                    R$ 27,90/mês
+                </strong>
+                <p class="text--big">
+                    No disney Plus você encontra as melhores histórias, com os personagens que você ama.
+                </p>
+                <button class="button">
+                    Assine Agora
+                </button>
+            </li>
+            <li class="plans__list__itens">
+                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="">
+                <strong class="title--small">
+                    R$ 45,90/mês
+                </strong>
+                <p class="text--big">
+                    Assine disney e Star Plus e tenha acesso a um mundo de entretenimento.
+                </p>
+                <button class="button">
+                    Assine Agora
+                </button>
+            </li>
+            <li class="plans__list__itens">
+                <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="">
+                <strong class="title--small">
+                    R$ 55,90/mês
+                </strong>
+                <p class="text--big">
+                    Assine disney, Star Plus e Starzplay e tenha acesso a um mundo de entretenimento.
+                </p>
+                <button class="button">
+                    Assine Agora
+                </button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *O preço pode variar de acordo com a plataforma.
+        </p>
+    </section>
+
+    <script src="./src/script/main.js"></script>
 </body>
 </html>
