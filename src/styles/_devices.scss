@@ -1,0 +1,31 @@
+.devices{
+    padding: 2.6vw;
+
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        gap: 12px;
+
+        &__itens{
+            text-align: center;
+
+            h4{
+                margin-top: 20px;
+                margin-bottom: 24px
+            }
+
+            li{
+                list-style-type: none;
+            }
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
